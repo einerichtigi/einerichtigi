@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .app-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            position: relative;
+        }
+
+        .top-bar {
+            background-color: #00A1E4;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .top-bar img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid orange;
+        }
+
+        .video-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            position: relative;
+        }
+
+        .username-tag {
+            position: absolute;
+            top: 100px;
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .username-tag .status-icon {
+            background-color: #00A1E4;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .action-icons {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .action-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .bottom-bar {
+            background-color: #00A1E4;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="icon"><!-- Logo or icon can be added here --></div>
+            <div class="icon"><!-- Another icon can go here --></div>
+        </div>
+
+        <!-- Video Container -->
+        <div class="video-container">
+            <div class="username-tag">
+                <div class="status-icon"></div>
+                <span>jana</span>
+            </div>
+        </div>
+
+        <!-- Action Icons on the side -->
+        <div class="action-icons">
+            <img src="https://via.placeholder.com/40/FFFFFF/000000?text=❤" alt="Like Icon">
+            <img src="https://via.placeholder.com/40/FFFFFF/000000?text=💬" alt="Comment Icon">
+            <img src="https://via.placeholder.com/40/FFFFFF/000000?text=⭐" alt="Star Icon">
+            <img src="https://via.placeholder.com/40/FFFFFF/000000?text=➡️" alt="Share Icon">
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar"></div>
+    </div>
+
+</body>
+</html>
